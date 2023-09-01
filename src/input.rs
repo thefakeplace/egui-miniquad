@@ -101,6 +101,9 @@ pub fn egui_key_from_mq_key(key: mq::KeyCode) -> Option<egui::Key> {
         mq::KeyCode::Y => egui::Key::Y,
         mq::KeyCode::Z => egui::Key::Z,
 
+        mq::KeyCode::Equal => egui::Key::PlusEquals,
+        mq::KeyCode::Minus => egui::Key::Minus,
+
         _ => return None,
     })
 }
